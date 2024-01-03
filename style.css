@@ -4,6 +4,7 @@
 
 
 /*Remove the blue line under the text for the entire project*/
+
 a{
   text-decoration: none;
   color: black;
@@ -140,6 +141,18 @@ a{
   transform: translateY(-30px);
  }
 
+ /*To make sure the comics fit a certian width*/
+ @media only screen and (max-width: 1200px) {
+  .thor-comic,
+  .ironman-comic,
+  .hulk-comic,
+  .hawkeye-comic,
+  .captainamerica-comic,
+  .blackwidow-comic {
+    top: 65%;
+    right: 57%;
+  }
+}
 
  /*                                The code below is for the Contents Page               */
 
