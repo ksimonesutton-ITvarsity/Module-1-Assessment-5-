@@ -1,0 +1,459 @@
+
+/*                          Below is the code for the Index page                      */
+
+
+
+/*Remove the blue line under the text for the entire project*/
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/*Page Number for the about page and contact page*/
+.Page-Number{
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  padding: 0;
+}
+
+/*background of the entire page*/
+.wooden-table{
+  background-image: url(Pictures/table-background.jpg);
+
+}
+
+/*This is the confidential folder*/
+.cover-page-background{
+  margin: 0;
+  background-image:url(Pictures/confidential-page\ .jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 70%;
+  background-size: 70% 130%; 
+  z-index: 3; /*controls the stacking order of overlapping elements on a page.*/
+  
+}
+
+/*The sticky note used for the menu*/
+ .sticky-note{
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  
+ }
+  
+ /*Text on the sticky note*/
+
+ /*The position of the sticky note*/
+ .notes{
+  position: absolute;
+  top: 24%;
+  left: 27%;
+  z-index: 1;
+ }
+/*The font of the wording  on the sticky note*/
+ .notes a{
+  font-size: 30px;
+  font-family: cursive;
+ }
+/*The element when you hover over each item on the menu, to change font size and color*/
+ .notes a:hover{
+  font-size: 35px;
+  color: red;
+ }
+/*The notice for people to read, its position, color and background*/
+ .notice{
+  background-image: url(Pictures/note-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: cursive;
+  font-size: 20px;
+  position: absolute;
+  padding: 20px;
+  top: 20%;
+  right: 25%;
+ }
+/*The burning effect behind the avengers*/
+.page-burn{
+  position: absolute;
+  top: 85%;
+  right: 20%;
+  width: 55%;
+  height: 45%;
+
+}
+
+/* Avengers in the middle of the page*/
+
+/* z-index controls the stacking order of overlapping elements on a page. For the avengers that i did not use the z-index is because i needed
+ them to be positoned behind all of the other avengers*/
+
+
+.thor-comic{
+  position: absolute;
+  top: 65%;
+  right:57%;
+ 
+}
+.ironman-comic{
+  position: absolute;
+  top: 40%;
+  right:35%;
+}
+.hulk-comic{
+  position: absolute;
+  top: 55%;
+  right:40%;
+  z-index: 5;/*controls the stacking order of overlapping elements on a page.*/
+
+}
+.hawkeye-comic{
+  position: absolute;
+  top: 70%;
+  right:20%;
+  z-index: 3;/*controls the stacking order of overlapping elements on a page.*/
+
+}
+.captainamerica-comic{
+  position: absolute;
+  top: 66%;
+  right:50%; 
+  z-index: 2;/*controls the stacking order of overlapping elements on a page.*/ 
+
+}
+.blackwidow-comic{
+  position: absolute;
+  top: 65%;
+  right:33%;
+  z-index: 3;
+}
+
+
+/*The below code is for each avenger and the effect when you hover over each one*/
+
+.avenger-container a{
+  transition: transform 0.2s ease-out;
+}
+ .avenger-container a:hover{
+  transform: translateY(-30px);
+ }
+
+
+ /*                                The code below is for the Contents Page               */
+
+
+
+/*This is the background and border of the contents page that gives a foler and wooden table effect*/
+.background{
+  background-image: url(Pictures/folder.jpg);
+  border: 65px solid transparent; 
+  border-image: url(Pictures/table-background.jpg) 200 ; 
+  padding:10%;
+}
+/*This is the sticky note background for the menu*/
+.sticky-note-content-page{
+  position: absolute;
+  top: 4%;
+  left: 7%;
+  z-index: 1; 
+
+}
+/*This is for the position of the wording on the sticky notes for the menu*/
+.page-notes{
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  z-index: 2;
+}
+/*This is the font & size of the menu wording*/
+.page-notes a{  
+  font-size: 20px;
+  font-family: cursive;
+  
+}
+/*This changes the color of the menu words and size*/
+.page-notes a:hover{
+  color: red;
+  font-size: 15px;
+}
+
+/*The position of the contents page */
+.contents-page-table{ 
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+}
+/*This is the background and size and tilting of the contenets page table*/
+.contents-page-table table{
+  background-image: url(Pictures/Avenger-watermark.png);
+  background-repeat: no-repeat;
+  background-color:white ;
+  background-position: center;
+  border-collapse: collapse;
+  width:100%;
+  height:100%;
+  transform: rotate(-5deg);
+}
+/*To only align the heading of the contents page to the center*/
+.contents-page-table table thead{
+  text-align: center;
+}
+/*This is the font style and border of the headings of the chapters in the folder*/
+.contents-page-table table td{
+  font-style: italic;
+  font-family: cursive;
+  transform: rotate(-1deg);
+  padding:2%;
+  border: none;
+}
+ /*When you hover over the headings of the chapters it changes the font size and color to red*/
+.contents-page-table table td a:hover{
+  color: red;
+  font-size: larger;
+
+}
+
+/*                          The code for the about page                 */
+
+.background{
+  background-image: url(Pictures/folder.jpg);
+  border: 65px solid transparent; 
+  border-image: url(Pictures/table-background.jpg) 200 ; 
+  padding:10%;
+}
+/*This is the sticky note background for the menu*/
+.sticky-note-content-page{
+  position: absolute;
+  top: 4%;
+  left: 7%;
+  z-index: 1; 
+
+}
+/*This is for the position of the wording on the sticky notes for the menu*/
+.page-notes{
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  z-index: 2;
+}
+/*This is the font & size of the menu wording*/
+.page-notes a{  
+  font-size: 20px;
+  font-family: cursive;
+  
+}
+/*This changes the color of the menu words and size*/
+.page-notes a:hover{
+  color: red;
+  font-size: 15px;
+}
+/*The background , color of thr font and position of the contact page*/
+.origin-story{
+  background-image: url(Pictures/Avenger-watermark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10%;
+  z-index: 2;
+  transform: rotate(-5deg);
+}
+
+
+
+
+/*                                   The Avenger Pages                 */
+
+/*The below code is for all 6 Avengers*/
+/*This is the background and border of the avenger page*/
+.avenger-body{
+  border: 65px solid transparent; 
+  border-image: url(Pictures/table-background.jpg) 200 ; 
+  background-image: url(Pictures/folder.jpg);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  margin: 0;
+ 
+  
+}
+/*The position of the menu wording*/
+.avenger-menu{
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  text-decoration: none;
+  z-index: 4;  
+
+}
+/*The font color and size for the menu wording*/
+.avenger-menu a{
+  font-family: cursive;
+  font-size: 15px;
+  color: black;
+}
+/*The change in the menu font szie and color when you hover over it*/
+.avenger-menu a:hover {
+  font-size: 18px;
+  color: red;
+}
+/*The menu background as a sticky note*/
+.avenger-sticky-note{
+  position: absolute;
+  top: 6%;
+  right: 6%;
+  width: 290px;
+  height: 340px;
+  z-index: 3;
+ 
+  
+}
+/*The background color of the table */
+.avenger-table{
+  background-color: rgb(249, 242, 242);
+  width: 70%;
+  transform: rotate(-3deg);
+  border-collapse: collapse;
+  
+  
+}
+/*The padding around the table row*/
+.tr{
+  padding: 5%;
+}
+.avenger-table td{
+  border: none;
+}
+/*The tape above the avenger pollaroid picture*/
+.tape{
+  position: absolute;
+  bottom: 60%;
+  left: 3%;
+  width: 260px;
+  height: 250px;
+  z-index: 4;
+  transform: rotate(-30deg);
+}
+/*This is the position of the avenger pollariod theme picture and the elemets used to decorate it*/
+.avenger-picture{
+  position: absolute;
+  top: 20%;
+  left:10%;
+  width: 290px;
+  height: 240px;
+  border: 10px solid #ccc;
+  z-index: 3;
+  transform: rotate(-5deg);
+}
+
+/*This is used to give the logo the center position on the page and background color*/
+.avenger-top-page{ 
+  text-align: center;
+  background-color: black;  
+}
+
+/*This is the allignment and color of the word "Classified"*/
+.classified-text td{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+/*This removes the border around the word "Before"*/
+.before{
+  text-align: right;
+  border: none;
+  transform: rotate(-5deg);
+}
+/*The position size and border around the huma form of the avenger*/
+.avenger-human-form{
+  position: absolute;
+  bottom:-46%;
+  left: 50%;
+  width: 350px;
+  height: 350px;
+  border: 10px solid #ccc;
+  z-index: 2;
+  transform: rotate(-5deg);
+}
+/*The serial number at the bottom of the page*/
+.serial-number{
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+/*The avengers page number*/
+.Avenger-Page-Number{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+
+/* Since ironman is no longer active, i needed to give a seperate backgrounf for the profile        */
+
+.avenger-table-iron-man{
+  background-image: url(Pictures/No-longer-active.png);
+  background-color: rgb(249, 242, 242);
+  width: 70%;
+  transform: rotate(-3deg);
+  border-collapse: collapse; 
+  
+}
+/*The padding around the table row*/
+.tr{
+  padding: 5%;
+}
+.avenger-table-iron-man td{
+  border: none;
+}
+
+
+
+
+/*                The code for the Contact Page          */
+
+
+/*The starndard background of the wooden table and folder texture*/
+.contact-page{
+  background-image: url(Pictures/folder.jpg);
+  border: 65px solid transparent; 
+  border-image: url(Pictures/table-background.jpg) 200 ; 
+  padding: 10%;
+  margin: 0;
+}
+/*This helped position the background note pade for the  contact page*/
+.contact-background img{
+
+  padding-top: 20%;
+  padding-top: 20%;
+}
+/*Position of the note wording*/
+.Details{
+  color: rgb(111, 110, 110);
+  font-family: cursive;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+}
+/*Size of the font of the h5 headings on the notes*/
+.Details h5{
+ font-size: 20px;
+}
+/*The position of the png image of a pencil*/
+.pencil img{
+  position: absolute;
+  top: 30%;
+  right:20%;
+  transform: rotate(85deg);
+}
+
